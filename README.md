@@ -36,6 +36,15 @@ The final model is a fine-tuned `google/flan-t5-base` model saved under:
 models/final_flan_t5_acos_model/
 ```
 
+## Live Demo
+
+The deployed Streamlit demo is available on Hugging Face Spaces:
+
+- Space Demo: https://huggingface.co/spaces/lijinzheyy/acos-extraction-system
+- Fine-tuned Model: https://huggingface.co/lijinzheyy/acos-flan-t5-course-evaluation
+
+The GitHub repository does not include model weights because the fine-tuned FLAN-T5 model is too large. During deployment, the Streamlit app loads the fine-tuned model from Hugging Face Hub.
+
 ## Problem Statement
 
 Traditional sentiment analysis usually returns a broad label such as positive, negative, or neutral. This is useful, but it does not explain what part of a course the student is discussing.
