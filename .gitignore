@@ -1,0 +1,39 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# Large model files / checkpoints
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+checkpoint-*/
+models/**/checkpoint-*/
+
+# Temporary files
+*.log
+tmp/
+temp/
+outputs/
+cache/
+.cache/
+.streamlit/secrets.toml
+
+# Data / report temporary files
+data/processed/*.csv
+data/predictions/*.tmp
+reports/*.tmp
+
+# Failed / test model folders
+failed_nan_run_final_flan_t5_acos_model/
+smoke_test_model/
+
+data/predictions/predictions.csv
