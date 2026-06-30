@@ -203,3 +203,13 @@ course-acos-extraction/
 - Improve multilingual training instead of relying only on translation.
 - Add human evaluation for course-feedback usefulness.
 - Deploy the final version to Hugging Face Spaces.
+
+## Model Weights
+
+The fine-tuned FLAN-T5-base model weights are not included in this GitHub repository due to file size limits.
+
+To run the app locally, place the final model folder at:
+
+models/final_flan_t5_acos_model/
+
+The model can later be hosted separately on Hugging Face Model Hub for deployment.
