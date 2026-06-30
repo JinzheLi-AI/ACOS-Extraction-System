@@ -1,3 +1,15 @@
+---
+title: Course ACOS Extraction System
+emoji: 🎓
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+python_version: "3.10"
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # Course ACOS Extraction / ACOS Course Evaluation System
 
 ## Project Overview
