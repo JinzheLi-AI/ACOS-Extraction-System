@@ -16,7 +16,16 @@ st.set_page_config(
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 # Previous deployed model path: ../The Best Model/
-MODEL_DIR = os.path.join(APP_DIR, "models", "final_flan_t5_acos_model")
+HF_MODEL_ID = "lijinzheyy/acos-flan-t5-course-evaluation"
+LOCAL_MODEL_DIR = os.path.join(APP_DIR, "models", "final_flan_t5_acos_model")
+
+MODEL_DIR = os.getenv("ACOS_MODEL_DIR")
+
+if not MODEL_DIR:
+    if os.path.isdir(LOCAL_MODEL_DIR):
+        MODEL_DIR = LOCAL_MODEL_DIR
+    else:
+        MODEL_DIR = HF_MODEL_ID
 
 SAMPLES_EN = [
     ("Screenshot workload", "The lecturer explained the concepts clearly, but the workload was too heavy."),
